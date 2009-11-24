@@ -1,0 +1,49 @@
+# git shortcuts
+alias gb='git branch -a -v'
+alias gs='git status'
+alias gd='git diff'
+alias ga='git add'
+
+# gc      => git checkout master
+# gc bugs => git checkout bugs
+function gc {
+  if [ -z "$1" ]; then
+    git checkout master
+  else
+    git checkout $1
+  fi
+}
+
+function gg {
+    git commit -a -m "$*"
+}
+
+# Shell usage
+alias ls='ls -G'
+alias h='history|grep'
+alias ..="cd .."
+alias zipr="zip -r"
+alias tu="top -o cpu" #top sorted by cpu
+alias tm="top -o vsize" #top sorted by memory
+function uni {
+    cd ~/Dropbox/Work/Software\ Engineering/
+    cd $1
+}
+
+function go {
+	cd $1
+	ls
+}
+
+function take {
+    mkdir $1
+    cd $1
+}
+
+# development
+alias arc='/Users/tcrayford/Automation/arc.sh'
+
+# Ruby
+alias ss="./script/server"
+alias gemi="sudo gem install"
+alias irb="irb --readline -r irb/completion"

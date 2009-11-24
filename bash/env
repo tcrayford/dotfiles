@@ -1,0 +1,14 @@
+export EDITOR="mate -w"
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=$PATH:~/.bin
+export PATH=$PATH:/Users/tcrayford/.bin/clj/leiningen/bin
+export PATH=$PATH:/Users/tcrayford/.bin/clj/lein
+# export CLASSPATH=$CLASSPATH:/Users/tcrayford/.bin/clj/compojure/deps/*
+# export CLASSPATH=$CLASSPATH:/Users/tcrayford/.bin/penumbra/src
+# export CLASSPATH=$CLASSPATH:/Users/tcrayford/.bin/penumbra/lib
+
+# -- start rip config -- #
+RIPDIR=/Users/tcrayford/.rip
+RUBYLIB="$RUBYLIB:$RIPDIR/active/lib"
+PATH="$PATH:$RIPDIR/active/bin"
+export RIPDIR RUBYLIB PATH
